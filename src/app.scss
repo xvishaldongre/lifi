@@ -1,0 +1,46 @@
+/* Write your global styles here, in SCSS syntax. Variables and mixins from the src/variables.scss file are available here without importing */
+/* Write your global styles here, in PostCSS syntax */
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+
+* {
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: "Droid Sans Mono";
+	src: url("/fonts/DroidSansMono.ttf");
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
+	font-family: "Droid Sans Mono", Menlo, Monaco, Consolas, "Liberation Mono",
+		"Courier New";
+	font-size: 0.9em;
+	margin: 0 auto;
+	padding: 0 1rem;
+	color: #566b78;
+	line-height: 1.5;
+	max-width: 50em;
+	display: flex;
+	flex-direction: column;
+}
+
+h1,
+h2,
+strong {
+	color: #333;
+	margin: 0.5rem 0;
+}
+
+h2 + p {
+	margin-top: 0;
+}
+
+a {
+	color: #e81c4f;
+}
